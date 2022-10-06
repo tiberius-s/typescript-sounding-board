@@ -11,7 +11,16 @@
       "skipFiles": ["<node_internals>/**"],
       "runtimeArgs": ["-r", "@swc-node/register"],
       "program": "${workspaceFolder}/index.ts",
-      "outFiles": ["${workspaceFolder}/**/*.js"]
+      "console": "integratedTerminal"
+    },
+    {
+      "type": "node",
+      "request": "launch",
+      "name": "Launch Current File",
+      "skipFiles": ["<node_internals>/**"],
+      "runtimeArgs": ["-r", "@swc-node/register"],
+      "program": "${relativeFile}",
+      "console": "integratedTerminal"
     }
   ]
 }
