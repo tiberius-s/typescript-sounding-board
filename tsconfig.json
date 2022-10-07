@@ -11,7 +11,11 @@
     "skipLibCheck": true,
     "pretty": true,
     "forceConsistentCasingInFileNames": true,
-    "inlineSourceMap": true
+    "inlineSourceMap": true,
+    "baseUrl": ".",
+    "paths": {
+      "@scripts/*":["scripts/*"]
+    }
   },
   "exclude": ["node_modules"]
 }

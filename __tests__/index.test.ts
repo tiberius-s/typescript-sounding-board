@@ -4,7 +4,7 @@ const consoleInfoSpy = jest.spyOn(console, 'info').mockImplementationOnce(jest.f
 
 describe('index.ts', () => {
   test('should call console.info', () => {
-    require('../index');
+    require('../index.ts');
     expect(consoleInfoSpy).toHaveBeenCalledWith('Hello, World');
   });
 });
