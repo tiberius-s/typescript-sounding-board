@@ -1,6 +1,6 @@
 {
   "name": "typescript-sounding-board",
-  "version": "0.0.1",
+  "version": "0.1.0",
   "description": "workspace to try out typescript scripts and packages",
   "author": "Tiberius Silivestru <tiberius.silivestru@gmail.com>",
   "license": "MIT",
