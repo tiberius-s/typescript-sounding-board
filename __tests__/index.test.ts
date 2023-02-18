@@ -1,10 +1,13 @@
-import { jest } from '@jest/globals';
-
-const consoleInfoSpy = jest.spyOn(console, 'info').mockImplementationOnce(jest.fn);
+import { afterEach, describe, expect, test, vi } from 'vitest';
 
 describe('index.ts', () => {
-  test('should call console.info', () => {
-    require('../index.ts');
-    expect(consoleInfoSpy).toHaveBeenCalledWith('Hello, World');
+  afterEach(() => {
+    vi.restoreAllMocks();
+  });
+
+  test('should call console.info', async () => {
+    const infoSpy = vi.spyOn(console, 'info').mockImplementation(() => vi.fn());
+    await import('../index.js');
+    expect(infoSpy).toHaveBeenCalledWith('Hello, World');
   });
 });

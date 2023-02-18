@@ -1,5 +1,9 @@
-type msg = string;
+export type msg = string;
 
-const message: msg = 'Hello, World';
+export function main(): void {
+  const message: msg = 'Hello, World';
 
-console.info(message);
+  console.info(message);
+}
+
+main();
