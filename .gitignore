@@ -129,5 +129,5 @@ dist
 .yarn/install-state.gz
 .pnp.*
 
-scripts
-__tests__/scripts
+scripts/*
+__tests__/scripts/*
