@@ -21,12 +21,11 @@
     "test:cov": "vitest run --coverage"
   },
   "devDependencies": {
-    "tsx": "^4.20.0",
-    "biome": "^0.3.3",
     "@types/node": "^22.4.1",
+    "biome": "^0.3.3",
+    "tsx": "^4.20.0",
     "typescript": "^5.5.4",
-    "vite-node": "^2.0.5",
-    "vitest": "^2.0.5"
+    "vitest": "^4.0.18"
   },
   "engines": {
     "node": ">=20",
