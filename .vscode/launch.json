@@ -9,7 +9,7 @@
       "request": "launch",
       "name": "Launch Program",
       "skipFiles": ["<node_internals>/**"],
-      "runtimeArgs": ["-r", "@swc-node/register"],
+      "runtimeArgs": ["-r", "tsx/register"],
       "program": "${workspaceFolder}/index.ts",
       "console": "integratedTerminal"
     },
@@ -18,7 +18,7 @@
       "request": "launch",
       "name": "Launch Current File",
       "skipFiles": ["<node_internals>/**"],
-      "runtimeArgs": ["-r", "@swc-node/register"],
+      "runtimeArgs": ["-r", "tsx/register"],
       "program": "${relativeFile}",
       "console": "integratedTerminal"
     }

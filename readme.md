@@ -31,13 +31,18 @@ npm i
 mkdir scripts __tests__/scripts
 ```
 
+## Tooling
+
+- Script runner: `tsx` (replaces the previous swc-based runner)
+- Linting & formatting: `biome` (replaces eslint + prettier)
+
 ## Example Usage
 
 Let's say I want to write a script that returns the even numbers out of an array.
 
 1. Create the following files
-    - `scripts/get-even-numbers.ts`
-    - `__tests__/scripts/get-even-numbers.test.ts`
+   - `scripts/get-even-numbers.ts`
+   - `__tests__/scripts/get-even-numbers.test.ts`
 2. Add the following code to `get-even-numbers.ts`
 
 ```js

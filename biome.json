@@ -1,0 +1,26 @@
+{
+  "$schema": "https://raw.githubusercontent.com/biomejs/biome/main/packages/@biomejs/biome/configuration_schema.json",
+  "files": {
+    "includes": ["**/*.{ts,tsx,js,jsx,json,md}"],
+    "excludes": ["node_modules", "dist", "build"]
+  },
+  "formatter": {
+    "enabled": true,
+    "indentStyle": "space",
+    "indentSize": 2,
+    "lineWidth": 80,
+    "singleQuote": true
+  },
+  "linter": {
+    "enabled": true,
+    "rules": {
+      "style": {
+        "useConst": "error",
+        "useSingleVarDeclarator": "error"
+      },
+      "suspicious": {
+        "noVar": "error"
+      }
+    }
+  }
+}

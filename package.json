@@ -7,28 +7,23 @@
   "type": "module",
   "keywords": [
     "typescript",
-    "swc",
+    "tsx",
     "esm"
   ],
   "scripts": {
-    "format": "prettier --check **/*.ts",
-    "format:fix": "prettier --write **/*.ts",
-    "lint": "eslint .",
-    "lint:fix": "eslint --fix .",
-    "start": "NODE_NO_WARNINGS=1 node --loader @swc-node/register/esm index.ts",
-    "script": "NODE_NO_WARNINGS=1 node --loader @swc-node/register/esm scripts/$npm_config_file",
+    "format": "biome format --check .",
+    "format:fix": "biome format --apply .",
+    "lint": "biome check .",
+    "lint:fix": "biome check --apply .",
+    "start": "NODE_NO_WARNINGS=1 tsx index.ts",
+    "script": "NODE_NO_WARNINGS=1 tsx scripts/$npm_config_file",
     "test": "vitest run",
     "test:cov": "vitest run --coverage"
   },
   "devDependencies": {
-    "@swc-node/register": "^1.10.9",
-    "@swc/core": "^1.7.14",
+    "tsx": "^4.20.0",
+    "biome": "^0.3.3",
     "@types/node": "^22.4.1",
-    "@typescript-eslint/eslint-plugin": "^8.2.0",
-    "@typescript-eslint/parser": "^8.2.0",
-    "eslint": "^9.9.0",
-    "eslint-config-prettier": "^9.1.0",
-    "prettier": "^3.3.3",
     "typescript": "^5.5.4",
     "vite-node": "^2.0.5",
     "vitest": "^2.0.5"
